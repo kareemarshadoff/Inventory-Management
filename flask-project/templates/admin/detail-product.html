@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="/static/detail-product.css">
+    <link rel="stylesheet" href="/static/admin-darkmod.css">
+</head>
+<body>
+
+    <h2>Product Information</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Brand</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>Brand A</td>
+                <td>Product 1</td>
+                <td>Category X</td>
+                <td>$50.00</td>
+                <td>2024-01-01</td>
+                <td>12:00 PM</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Brand B</td>
+                <td>Product 2</td>
+                <td>Category Y</td>
+                <td>$35.00</td>
+                <td>2024-01-02</td>
+                <td>03:30 PM</td>   
+            </tr>
+        
+        </tbody>
+    </table>
+    <a href="{{ url_for('admin') }}" class="bach-home"> <-- Home</a>
+
+    <div class="theme-container shadow-dark">
+        <img id="theme-icon" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+    </div>
+
+    <script src="/static/detail-product.js">
+        
+    </script>
+
+</body>
+</html>

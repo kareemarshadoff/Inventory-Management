@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="/static/product.css">
+    <link rel="stylesheet" href="/static/admin-darkmod.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="container">
+        <div class="text">
+           Add Product
+        </div>
+        <form action="#" id="productForm">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="brand" required>
+                    <div class="underline"></div>
+                    <label for="">Brand name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="productName" required>
+                    <div class="underline"></div>
+                    <label for="">Product name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="category" required>
+                    <div class="underline"></div>
+                    <label for="">Category</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" id="quantity" required>
+                    <div class="underline"></div>
+                    <label for="">Quantity</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="productPrice" required>
+                    <div class="underline"></div>
+                    <label for="">Product Price</label>
+                </div>
+                <div class="input-data">
+                    <select name="location" id="location-select" class="select-location" required>
+                        <option value="">Choose the location</option>
+                        <option value="Shop">Shop</option>
+                        <option value="Warehouse">Warehouse</option>
+                    </select>
+                    <div class="underline"></div>
+                </div>   
+            </div>
+            <center>
+                <button type="button" class="sub-button" onclick="addProduct()">Submit</button>
+            </center>
+            <a href="{{ url_for('admin') }}" style="text-decoration: none; color: black;"> <-- Home</a>
+        </form>
+    </div>
+  </div>  
+    
+    <div>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Sl No</th>
+                    <th>Brand</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Location</th>
+                    <th>Product Price</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+             
+            </tbody>
+        </table>
+    </div>
+
+    <div class="theme-container shadow-dark">
+        <img id="theme-icon" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+    </div>
+
+    <script src="/static/product.js"></script>
+</body>
+</html>
